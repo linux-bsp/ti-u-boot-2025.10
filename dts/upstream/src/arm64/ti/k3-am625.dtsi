@@ -7,8 +7,6 @@
  * Copyright (C) 2020-2024 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-/dts-v1/;
-
 #include "k3-am62.dtsi"
 
 / {
