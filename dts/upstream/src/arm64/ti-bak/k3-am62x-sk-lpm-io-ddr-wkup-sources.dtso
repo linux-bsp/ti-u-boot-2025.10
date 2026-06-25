@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: GPL-2.0
+/**
+ * AM62 family of devices can wakeup from I/O Only + DDR low power mode via
+ * multiple wakeup sources. This overlay enables mcu_mcan pins to be used
+ * as wakeup source.
+ *
+ * Copyright (C) 2025 Texas Instruments Incorporated - http://www.ti.com/
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/input/input.h>
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/interrupt-controller/irq.h>
+#include <dt-bindings/interrupt-controller/arm-gic.h>
+
+#include "k3-pinctrl.h"
+
+&mcu_mcan0 {
+	status = "okay";
+};
+
+&mcu_mcan1 {
+	status = "okay";
+};
