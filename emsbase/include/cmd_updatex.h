@@ -26,16 +26,17 @@ typedef enum UPDATEX_TYPE
     UPDATEX_TYPE_TFTP        = 2,
 }UPDATEX_TYPE_E;
 
-typedef enum UPDATEX_FILE_TYPE
-{
-    UPDATEX_FILE_TYPE_NONE          = 0,
-    UPDATEX_FILE_TYPE_UBOOT         = 1,
-    UPDATEX_FILE_TYPE_KERNEL        = 2,
-    UPDATEX_FILE_TYPE_FDT           = 3,
-    UPDATEX_FILE_TYPE_ROOTFS        = 4,
-    UPDATEX_FILE_TYPE_TEEOS         = 5,
-    UPDATEX_FILE_TYPE_LOADER        = 6,
-}UPDATEX_FILE_TYPE_E;
+typedef enum UPDATEX_FILE_TYPE {
+    UPDATEX_FILE_TYPE_NONE              = 0,
+    UPDATEX_FILE_TYPE_LOADER            = 1,
+    UPDATEX_FILE_TYPE_ATF               = 2,
+    UPDATEX_FILE_TYPE_TEEOS             = 3,
+	UPDATEX_FILE_TYPE_FDT               = 4,
+    UPDATEX_FILE_TYPE_UBOOT             = 5,
+    UPDATEX_FILE_TYPE_KERNEL            = 6,
+    UPDATEX_FILE_TYPE_ROOTFS            = 7,
+    UPDATEX_FILE_TYPE_APPFS             = 8,
+} UPDATEX_FILE_TYPE_E;
 
 typedef enum UPDATEX_FILE_FOMAT_TYPE
 {
